@@ -1,0 +1,54 @@
+
+form{
+    background-color: #22232b;
+    color: white;
+    width: 400px;
+    height: 320px;
+    position: absolute;
+    top: 165px;
+    left: 440px;
+    padding: 6px;
+    border-radius: 6px;
+    box-shadow: 1px 1px 3px 5px #2c2d38;
+
+}
+
+#logo{
+    display: inline;
+    position: relative;
+    left: 20px;
+}
+
+form h1{
+     display: inline;
+     font-size: 40px;
+     position: relative;
+     left: 30px;
+
+}
+
+input{
+   width: 360px;
+   height: 30px;
+   transform: translate(4%, 20%);
+   border-radius: 5px;
+}
+
+#login{
+    width: 360px;
+    height: 30px;
+    background-color: orangered;
+    color: black;
+    transform: translate(5%, 0);
+}
+
+#forget{
+  float: right;
+}
+
+u{
+    color: orangered;
+    font-weight: bolder;
+    cursor: pointer;
+    text-decoration: none;
+}
