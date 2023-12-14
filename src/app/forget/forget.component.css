@@ -1,0 +1,35 @@
+form{
+    background-color: #22232b;
+    color: white;
+    max-width: 400px;
+    max-height: 320px;
+    position: absolute;
+    top: 165px;
+    left: 520px;
+    padding: 7px;
+    border-radius: 6px;
+    box-shadow: 1px 1px 3px 5px #2c2d38;
+}
+
+h1{
+    text-align: center;
+}
+
+input{
+    width: 340px;
+    height: 30px;
+    border-radius: 5px;
+ }
+
+
+
+ a{
+    color: orangered;
+    font-weight: bolder;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#login{
+    float: right;
+}

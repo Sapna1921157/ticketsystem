@@ -6,7 +6,7 @@ form{
     height: 320px;
     position: absolute;
     top: 165px;
-    left: 440px;
+    left: 490px;
     padding: 6px;
     border-radius: 6px;
     box-shadow: 1px 1px 3px 5px #2c2d38;
@@ -46,7 +46,7 @@ input{
   float: right;
 }
 
-u{
+a{
     color: orangered;
     font-weight: bolder;
     cursor: pointer;

@@ -1,3 +1,39 @@
-.neha{
-    color:blanchedalmond;
+
+form{
+    background-color: #22232b;
+    color: white;
+    width: 420px;
+    min-height: 320px;
+    position: absolute;
+    top: 95px;
+    left: 490px;
+    padding: 8px;
+    border-radius: 6px;
+    box-shadow: 1px 1px 3px 5px #2c2d38;
+  
+
+}
+
+form h1{
+    font-size: 40px;
+  
+    text-align: center;
+
+}
+
+input{
+    width: 360px;
+    height: 30px;
+    transform: translate(4%, 20%);
+    border-radius: 5px;
+ }
+ 
+
+button{
+    background-color: orangered;
+    color: black;
+    font-weight: bolder;
+    width: 70px;
+    height: 30px;
+    border-radius: 4px;
 }
