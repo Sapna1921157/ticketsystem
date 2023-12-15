@@ -1,11 +1,14 @@
 
-<form action="http://httpbin.org/post" method="POST">
+<form [formGroup] ="loginForm" (ngSubmit) ="loginUser()">
   <img src="..\assets\images\logo.jpg" alt="logo" width="60px" height="60px" id="logo">
 
   <h1>Ticketing System</h1>
-   <input type="text" placeholder="Enter Username" required><br><br>
-   <input type="password" placeholder="Enter Password" required><br><br>
-   <button id="login" routerLink="/home">Login</button><br><br>
-   <a class="button" routerLink="/signup">Signup</a> 
-<a id="forget" routerLink="/forget">Forget Password</a>
+   <input type="email" placeholder="Enter Your Email"  formControlName="user"><br><br>
+
+   <span style="color: red;" *ngIf="user && user.invalid && user.touched">This field is required</span>
+   <input type="password" placeholder="Enter Password" formControlName="password"><br><br>
+    <span style="color: red;" *ngIf="password && password.invalid && password.touched" >This field is required</span>
+   <button id="login"  [disabled]="loginForm.invalid" >Login</button><br><br>
+   <a class="button" (click)="signup()">Signup</a> 
+<a id="forget" (click)="forget()">Forget Password</a>
 </form>

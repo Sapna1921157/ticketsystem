@@ -1,25 +1,34 @@
-<form>  
+<form  [formGroup] ="signup" (ngSubmit) ="signUp()">  
       <h1>Sign Up Form</h1><br>
          
-    <input type="text" name="firstname" size="15" placeholder=" Enter Firstname" required/> <br> <br>  
-    <input type="text" name="lastname" size="15" placeholder="Enter Lastname" required/> <br> <br>     
+    <input type="text" name="firstname" size="15" placeholder=" Enter Firstname" formControlName="firstname"/> <br> <br>  
+    <span style="color: red;" *ngIf="fname && fname.invalid && fname.touched">This field is required</span>
+    <input type="text" name="lastname" size="15" placeholder="Enter Lastname" formControlName="lastname"/> <br> <br>     
     
-      
-  
-    <input type="number" name="country code"  value="+91" size="2" placeholder="Enter Phonenumber" required/>   
-  
-    <br> <br>  
+    <span style="color: red;" *ngIf="lname && lname.invalid && lname.touched">This field is required</span>
 
-    <input type="email" id="email" name="email" placeholder="Enter Email" required/>  
+  
+    <input type="number" name="country code"  value="+91" size="2" placeholder="Enter Phonenumber" formControlName="number"/>   
+  
     <br> <br>  
+    <span style="color: red;" *ngIf="num && num.invalid && num.touched">This field is required</span>
 
-    <input type="Password" id="pass" name="pass" placeholder="Enter Password" required/>   
+
+    <input type="email" id="email" name="email" placeholder="Enter Email (Ex. abc123@gmail.com)" formControlName="email"/>  
     <br> <br>  
+    <span style="color: red;" *ngIf="mail && mail.invalid && mail.touched">This field is required</span>
+
+    <input type="Password" id="pass" name="pass" placeholder="Enter Password" formControlName="password"/>   
+    <br> <br>  
+    <span style="color: red;" *ngIf="pass && pass.invalid && pass.touched">This field is required</span>
      
-    <input type="Password" id="repass" name="repass" placeholder="Re-type Password" required> <br> <br>  
+    <input type="Password" id="repass" name="repass" placeholder="Re-type Password" formControlName="retype">
+     <br> <br>  
+     <span style="color: red;" *ngIf="rety && rety.invalid && rety.touched">This field is required</span>
+
     <div style="text-align: center;">
     
-        <button routerLink="/home">Sign In</button><br><br>
+        <button (click)="login()" [disabled]="signup">Sign In</button><br><br>
     </div>
    
     </form>  

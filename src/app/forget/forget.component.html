@@ -1,15 +1,15 @@
-<form >
+<form [formGroup] ="forgetPassword" (ngSubmit) ="reset()">
    <h1>Forget Password </h1>  
    
-    <input type="password" id="password" placeholder="Old Password" required/><br><br>
+    <input type="password" id="password" placeholder="Old Password"  formControlName="oldpassword"/><br><br>
 
     
-    <input type="password" id="password" placeholder="New Password" required/><br><br>
+    <input type="password" id="password" placeholder="New Password" formControlName="password"/><br><br>
   
     
-    <input type="password" id="password-verify" placeholder="Re-type Password" required/><br><br>
+    <input type="password" id="password-verify" placeholder="Re-type Password" formControlName="retype"/><br><br>
 
 
     <a class="reset" >Reset Password</a> 
-        <a id="login" routerLink="/login">Login</a>
+        <a id="login">Login</a>
   </form>

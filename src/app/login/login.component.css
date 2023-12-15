@@ -52,3 +52,6 @@ a{
     cursor: pointer;
     text-decoration: none;
 }
+p {
+    font-family: Lato;
+  }
